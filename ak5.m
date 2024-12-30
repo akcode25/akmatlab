@@ -1,7 +1,7 @@
 % projectile
 
 v0 = 250; theta = 65; t_wind = 30; g = 9.81;
-t_flight = 2*v0*sin(theta)/g;   % time of flight without wind
+t_flight = 2*v0*sin(theta)/g;     % time of flight without wind
 t = linspace(0, t_flight , 1000); % time vector
 
 z = v0 * sin(theta) * t - 0.5 * g * t.^2; % Height
