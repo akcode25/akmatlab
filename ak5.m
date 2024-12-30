@@ -8,11 +8,12 @@ z = v0 * sin(theta) * t - 0.5 * g * t.^2; % Height
 y = v0 * cos(theta) * t;                  % Distance north
 x = t_wind * t;                           % Distance west cuz wind
 
+plot3(0*t, y, z, 'b', x, y, z, 'r');   % No wind (x = 0)  % With wind
+
+% or,
 % plot3(0*t, y, z, 'b');  % no wind
 % hold on;
 % plot3(x, y, z, 'r');   % with wind
-
-plot3(0*t, y, z, 'b', x, y, z, 'r');   % No wind (x = 0)  % With wind
 
 grid on; xlabel('West (m)'); ylabel('North (m)'); zlabel('Height (m)');
 legend('No Wind', 'With Wind'); title('Projectile Trajectory');
