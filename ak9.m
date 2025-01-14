@@ -8,4 +8,6 @@ function thickness = box_thickness(weight)
 end
 
 thickness = box_thickness(15);
-fprintf('The thickness of the box is %.4f inches\n', thickness);
+thickness
+
+% fprintf('The thickness of the box is %.4f inches\n', thickness);
