@@ -5,7 +5,8 @@ function [h_max, d_max] = projectile(v0, theta)
     theta = deg2rad(theta);
     h_max = (v0^2 * sin(theta)^2) / (2 * g);
     d_max = (v0^2 * sin(2 * theta)) / g;
-    t = linspace(0, 2 * v0 * sin(theta) / g, 100);
+    T = 2 * v0 * sin(theta) / g;
+    t = linspace(0, T, 100);
 
     x = v0 * cos(theta) * t;  % Horizontal position
     y = v0 * sin(theta) * t - 0.5 * g * t.^2;  % Vertical position
