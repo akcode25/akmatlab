@@ -10,9 +10,8 @@ function [h_max, d_max] = projectile(v0, theta)
 
     x = v0 * cos(theta) * t;  % Horizontal position
     y = v0 * sin(theta) * t - 0.5 * g * t.^2;  % Vertical position
-    plot(x, y);
+    plot(x, y); grid on;
     xlabel('Horizontal Distance (m)'); ylabel('Vertical Distance (m)');
-    grid on;
 end
 
 %% ak8.m
