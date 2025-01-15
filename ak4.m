@@ -8,7 +8,7 @@ x = r * cos(theta) + sqrt(l^2 - (r * sin(theta)).^2);
 v = gradient(x) ./ gradient(t);  % Vel- derivative of posn wrt time
 a = gradient(v) ./ gradient(t);  % Acc- derivative of vel wrt time
 
-plot(t, x, 'b', t, v, 'r', t, a, 'g');
+plot(t, x, 'b', t, v, 'r', t, a, 'g'); grid on; 
 legend('Position (mm)', 'Velocity (mm/s)', 'Acceleration (mm/s^2)');
-xlabel('Time (s)'); grid on; title('Piston Position, Velocity, and Acceleration');
+xlabel('Time (s)'); title('Piston Position, Velocity, and Acceleration');
 
