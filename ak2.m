@@ -9,5 +9,3 @@ T = Ts + (To - Ts) * exp(-k * t); % Calc temp after 3 hrs
 T
 
 %fprintf('Temp after 3 hrs: %f deg F',T);
-%disp('Temp after 3 hrs:')
-%disp(T);
