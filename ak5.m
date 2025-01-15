@@ -10,10 +10,10 @@ x = t_wind * t;                           % Distance west cuz wind
 
 plot3(0*t, y, z, 'b', x, y, z, 'r');   % No wind (x = 0)  % With wind
 
+grid on; xlabel('West (m)'); ylabel('North (m)'); zlabel('Height (m)');
+legend('No Wind', 'With Wind'); title('Projectile Trajectory');
+
 % or,
 % plot3(0*t, y, z, 'b');  % no wind
 % hold on;
 % plot3(x, y, z, 'r');   % with wind
-
-grid on; xlabel('West (m)'); ylabel('North (m)'); zlabel('Height (m)');
-legend('No Wind', 'With Wind'); title('Projectile Trajectory');
